@@ -1,3 +1,179 @@
-{
-  "dataString": "\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n  \u003cmeta charset=\"UTF-8\"\u003e\n  \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n  \u003ctitle\u003eNatally · Profile\u003c/title\u003e\n  \u003clink rel=\"preconnect\" href=\"https://fonts.googleapis.com\"\u003e\n  \u003clink rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin\u003e\n  \u003clink href=\"https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap\" rel=\"stylesheet\"\u003e\n  \u003cscript src=\"https://cdn.tailwindcss.com\"\u003e\u003c/script\u003e\n  \u003cscript\u003e\n    tailwind.config = {\n      theme: {\n        extend: {\n          colors: {\n            plumBlack: '#120c1c',\n            cream: '#f1e8d8',\n            gold: '#c9a24a',\n            goldBright: '#f2ca50',\n            panelDark: '#1a1226',\n            panelMid: '#2a1d3d',\n            borderPlum: '#3a2d50',\n            borderPlumLight: '#4a3a64'\n          },\n          fontFamily: {\n            display: ['Fraunces', 'serif'],\n            smallcaps: ['Cinzel', 'serif'],\n            body: ['Nunito Sans', 'sans-serif']\n          }\n        }\n      }\n    };\n  \u003c/script\u003e\n  \u003cstyle\u003e\n    body {\n      background-color: #120c1c;\n      color: #f1e8d8;\n      font-family: 'Nunito Sans', sans-serif;\n      margin: 0;\n      padding: 0;\n      -webkit-font-smoothing: antialiased;\n    }\n    .touch-target {\n      min-height: 44px;\n      min-width: 44px;\n      display: inline-flex;\n      align-items: center;\n      justify-content: center;\n    }\n  \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody class=\"bg-plumBlack text-cream min-h-screen flex justify-center selection:bg-gold selection:text-plumBlack\"\u003e\n\n  \u003c!-- Mobile viewport container (390px default canvas frame / responsive) --\u003e\n  \u003cdiv class=\"w-full max-w-[420px] min-h-screen bg-plumBlack flex flex-col px-5 py-6 space-y-6\"\u003e\n\n    \u003c!-- Top Bar: Title \"Profile\" with \"Close\" --\u003e\n    \u003cheader class=\"flex items-center justify-between pt-2 pb-1 border-b border-borderPlum\"\u003e\n      \u003ch1 class=\"font-display text-2xl font-semibold tracking-wide text-cream\"\u003e\n        Profile\n      \u003c/h1\u003e\n      \u003cbutton type=\"button\" aria-label=\"Close\" class=\"touch-target px-3 py-2 text-sm font-smallcaps tracking-wider text-gold hover:text-goldBright transition-colors\"\u003e\n        Close\n      \u003c/button\u003e\n    \u003c/header\u003e\n\n    \u003c!-- Card: Name Robin Cheung, Email robin.realtor416@gmail.com --\u003e\n    \u003csection class=\"bg-panelDark border border-borderPlum rounded-[18px] p-5 shadow-none\"\u003e\n      \u003cdiv class=\"flex items-center space-x-4\"\u003e\n        \u003c!-- Avatar / Emblem with Natally theme styling --\u003e\n        \u003cdiv class=\"w-12 h-12 rounded-full border border-gold/40 bg-panelMid flex items-center justify-center flex-shrink-0 text-gold font-display text-lg\"\u003e\n          RC\n        \u003c/div\u003e\n        \u003cdiv class=\"flex-1 min-w-0\"\u003e\n          \u003cp class=\"font-display text-xl text-cream font-medium tracking-normal truncate\"\u003e\n            Robin Cheung\n          \u003c/p\u003e\n          \u003cp class=\"text-sm font-body text-cream/75 truncate mt-0.5\"\u003e\n            robin.realtor416@gmail.com\n          \u003c/p\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n    \u003c/section\u003e\n\n    \u003c!-- Balance card: \"79 Cr\" large with a \"Top Up\" gold-outlined button --\u003e\n    \u003csection class=\"bg-panelDark border border-borderPlum rounded-[18px] p-5 flex items-center justify-between shadow-none\"\u003e\n      \u003cdiv\u003e\n        \u003cspan class=\"block text-xs font-smallcaps tracking-widest text-gold uppercase mb-1\"\u003e\n          Balance\n        \u003c/span\u003e\n        \u003cdiv class=\"flex items-baseline space-x-2\"\u003e\n          \u003cspan class=\"font-display text-4xl font-normal text-goldBright tracking-tight\"\u003e\n            79\n          \u003c/span\u003e\n          \u003cspan class=\"font-smallcaps text-lg text-cream/90 font-medium\"\u003e\n            Cr\n          \u003c/span\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n      \u003cbutton type=\"button\" class=\"touch-target px-5 py-2.5 rounded-[14px] border border-gold text-gold font-smallcaps text-sm tracking-wider hover:bg-gold hover:text-plumBlack transition-colors\"\u003e\n        Top Up\n      \u003c/button\u003e\n    \u003c/section\u003e\n\n    \u003c!-- Section \"All transactions\" --\u003e\n    \u003csection class=\"space-y-4 pt-1\"\u003e\n      \u003ch2 class=\"font-smallcaps text-xs tracking-widest text-gold uppercase\"\u003e\n        All transactions\n      \u003c/h2\u003e\n\n      \u003c!-- Transaction 1: Souvenir reading --\u003e\n      \u003cdiv class=\"bg-panelDark border border-borderPlum rounded-[18px] p-5 space-y-4\"\u003e\n        \u003cdiv class=\"flex flex-col space-y-1\"\u003e\n          \u003cdiv class=\"flex items-baseline justify-between\"\u003e\n            \u003cspan class=\"font-display text-base text-cream font-medium\"\u003e\n              Souvenir reading\n            \u003c/span\u003e\n            \u003cspan class=\"text-xs font-smallcaps tracking-wider text-gold font-semibold\"\u003e\n              +39 Cr\n            \u003c/span\u003e\n          \u003c/div\u003e\n          \u003cp class=\"text-xs font-body text-cream/75\"\u003e\n            US$0.99 · 30 October 2026 · paid\n          \u003c/p\u003e\n        \u003c/div\u003e\n\n        \u003c!-- Two buttons \"Open your atelier\" and \"Souvenir PDF\" --\u003e\n        \u003cdiv class=\"grid grid-cols-2 gap-3 pt-1\"\u003e\n          \u003cbutton type=\"button\" class=\"touch-target w-full px-3 py-2.5 rounded-[12px] bg-panelMid border border-borderPlum text-cream hover:border-gold/60 text-xs font-smallcaps tracking-wider transition-colors text-center\"\u003e\n            Open your atelier\n          \u003c/button\u003e\n          \u003cbutton type=\"button\" class=\"touch-target w-full px-3 py-2.5 rounded-[12px] bg-panelMid border border-borderPlum text-cream hover:border-gold/60 text-xs font-smallcaps tracking-wider transition-colors text-center\"\u003e\n            Souvenir PDF\n          \u003c/button\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n\n      \u003c!-- Transaction 2: Exploration credits --\u003e\n      \u003cdiv class=\"bg-panelDark border border-borderPlum rounded-[18px] p-5\"\u003e\n        \u003cdiv class=\"flex items-baseline justify-between\"\u003e\n          \u003cspan class=\"font-display text-base text-cream font-medium\"\u003e\n            Exploration credits\n          \u003c/span\u003e\n          \u003cspan class=\"text-xs font-smallcaps tracking-wider text-gold font-semibold\"\u003e\n            +40 Cr\n          \u003c/span\u003e\n        \u003c/div\u003e\n        \u003cp class=\"text-xs font-body text-cream/75 mt-1\"\u003e\n          US$0.99 · 28 October 2026 · paid\n        \u003c/p\u003e\n      \u003c/div\u003e\n\n      \u003c!-- Small note & Restore purchases --\u003e\n      \u003cdiv class=\"pt-2 text-center space-y-2\"\u003e\n        \u003cp class=\"text-xs font-body text-cream/70\"\u003e\n          Every purchase on your account, read from the store.\n        \u003c/p\u003e\n        \u003cdiv\u003e\n          \u003cbutton type=\"button\" class=\"touch-target text-xs font-body text-cream/85 underline hover:text-gold transition-colors py-1\"\u003e\n            Restore purchases\n          \u003c/button\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n    \u003c/section\u003e\n\n    \u003c!-- Spacer to keep layout balanced on tall screens --\u003e\n    \u003cdiv class=\"flex-grow\"\u003e\u003c/div\u003e\n\n    \u003c!-- At the very bottom a full-width \"Sign out\" button --\u003e\n    \u003cfooter class=\"pt-4 pb-2\"\u003e\n      \u003cbutton type=\"button\" class=\"touch-target w-full py-3.5 px-4 rounded-[14px] bg-panelMid border border-borderPlum text-cream hover:border-gold/50 font-smallcaps text-sm tracking-wider transition-colors\"\u003e\n        Sign out\n      \u003c/button\u003e\n    \u003c/footer\u003e\n\n  \u003c/div\u003e\n\n\u003c/body\u003e\n\u003c/html\u003e\n"
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natally · Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            plumBlack: '#120c1c',
+            cream: '#f1e8d8',
+            gold: '#c9a24a',
+            goldBright: '#f2ca50',
+            panelDark: '#1a1226',
+            panelMid: '#2a1d3d',
+            borderPlum: '#3a2d50',
+            borderPlumLight: '#4a3a64'
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            smallcaps: ['Cinzel', 'serif'],
+            body: ['Nunito Sans', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #120c1c;
+      color: #f1e8d8;
+      font-family: 'Nunito Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body class="bg-plumBlack text-cream min-h-screen flex justify-center selection:bg-gold selection:text-plumBlack">
+
+  <!-- Mobile viewport container (390px default canvas frame / responsive) -->
+  <div class="w-full max-w-[420px] min-h-screen bg-plumBlack flex flex-col px-5 py-6 space-y-6">
+
+    <!-- Top Bar: Title "Profile" with "Close" -->
+    <header class="flex items-center justify-between pt-2 pb-1 border-b border-borderPlum">
+      <h1 class="font-display text-2xl font-semibold tracking-wide text-cream">
+        Profile
+      </h1>
+      <button type="button" aria-label="Close" class="touch-target px-3 py-2 text-sm font-smallcaps tracking-wider text-gold hover:text-goldBright transition-colors">
+        Close
+      </button>
+    </header>
+
+    <!-- Card: Name Robin Cheung, Email robin.realtor416@gmail.com -->
+    <section class="bg-panelDark border border-borderPlum rounded-[18px] p-5 shadow-none">
+      <div class="flex items-center space-x-4">
+        <!-- Avatar / Emblem with Natally theme styling -->
+        <div class="w-12 h-12 rounded-full border border-gold/40 bg-panelMid flex items-center justify-center flex-shrink-0 text-gold font-display text-lg">
+          RC
+        </div>
+        <div class="flex-1 min-w-0">
+          <p class="font-display text-xl text-cream font-medium tracking-normal truncate">
+            Robin Cheung
+          </p>
+          <p class="text-sm font-body text-cream/75 truncate mt-0.5">
+            robin.realtor416@gmail.com
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Balance card: "79 Cr" large with a "Top Up" gold-outlined button -->
+    <section class="bg-panelDark border border-borderPlum rounded-[18px] p-5 flex items-center justify-between shadow-none">
+      <div>
+        <span class="block text-xs font-smallcaps tracking-widest text-gold uppercase mb-1">
+          Balance
+        </span>
+        <div class="flex items-baseline space-x-2">
+          <span class="font-display text-4xl font-normal text-goldBright tracking-tight">
+            79
+          </span>
+          <span class="font-smallcaps text-lg text-cream/90 font-medium">
+            Cr
+          </span>
+        </div>
+      </div>
+      <button type="button" class="touch-target px-5 py-2.5 rounded-[14px] border border-gold text-gold font-smallcaps text-sm tracking-wider hover:bg-gold hover:text-plumBlack transition-colors">
+        Top Up
+      </button>
+    </section>
+
+    <!-- Section "All transactions" -->
+    <section class="space-y-4 pt-1">
+      <h2 class="font-smallcaps text-xs tracking-widest text-gold uppercase">
+        All transactions
+      </h2>
+
+      <!-- Transaction 1: Souvenir reading -->
+      <div class="bg-panelDark border border-borderPlum rounded-[18px] p-5 space-y-4">
+        <div class="flex flex-col space-y-1">
+          <div class="flex items-baseline justify-between">
+            <span class="font-display text-base text-cream font-medium">
+              Souvenir reading
+            </span>
+            <span class="text-xs font-smallcaps tracking-wider text-gold font-semibold">
+              +39 Cr
+            </span>
+          </div>
+          <p class="text-xs font-body text-cream/75">
+            US$0.99 · 30 October 2026 · paid
+          </p>
+        </div>
+
+        <!-- Two buttons "Open your atelier" and "Souvenir PDF" -->
+        <div class="grid grid-cols-2 gap-3 pt-1">
+          <button type="button" class="touch-target w-full px-3 py-2.5 rounded-[12px] bg-panelMid border border-borderPlum text-cream hover:border-gold/60 text-xs font-smallcaps tracking-wider transition-colors text-center">
+            Open your atelier
+          </button>
+          <button type="button" class="touch-target w-full px-3 py-2.5 rounded-[12px] bg-panelMid border border-borderPlum text-cream hover:border-gold/60 text-xs font-smallcaps tracking-wider transition-colors text-center">
+            Souvenir PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- Transaction 2: Exploration credits -->
+      <div class="bg-panelDark border border-borderPlum rounded-[18px] p-5">
+        <div class="flex items-baseline justify-between">
+          <span class="font-display text-base text-cream font-medium">
+            Exploration credits
+          </span>
+          <span class="text-xs font-smallcaps tracking-wider text-gold font-semibold">
+            +40 Cr
+          </span>
+        </div>
+        <p class="text-xs font-body text-cream/75 mt-1">
+          US$0.99 · 28 October 2026 · paid
+        </p>
+      </div>
+
+      <!-- Small note & Restore purchases -->
+      <div class="pt-2 text-center space-y-2">
+        <p class="text-xs font-body text-cream/70">
+          Every purchase on your account, read from the store.
+        </p>
+        <div>
+          <button type="button" class="touch-target text-xs font-body text-cream/85 underline hover:text-gold transition-colors py-1">
+            Restore purchases
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacer to keep layout balanced on tall screens -->
+    <div class="flex-grow"></div>
+
+    <!-- At the very bottom a full-width "Sign out" button -->
+    <footer class="pt-4 pb-2">
+      <button type="button" class="touch-target w-full py-3.5 px-4 rounded-[14px] bg-panelMid border border-borderPlum text-cream hover:border-gold/50 font-smallcaps text-sm tracking-wider transition-colors">
+        Sign out
+      </button>
+    </footer>
+
+  </div>
+
+</body>
+</html>
