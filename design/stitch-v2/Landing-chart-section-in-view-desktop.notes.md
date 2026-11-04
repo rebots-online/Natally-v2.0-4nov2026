@@ -1,0 +1,6 @@
+Here is the scrolled state of the **Natally** landing page with the **"Your chart, calculated exactly"** section brought into prime focus:
+
+### Key Design & Layout Details:
+- **Sticky Left Hero (Zoomed Chart Wheel)**: Replaces the illustration with an enlarged, high-precision natal chart wheel featuring astronomical rings, zodiac degree subdivisions, Placidus/Whole Sign house division rays, distinct planetary markers (Sol, Luna, Ascendant, Medium Coeli), and delicate aspect connecting chords in antique gold. Interactive voice cadence indicators and quick inspection toggles remain anchored alongside.
+- **Highlighted "Your chart, calculated exactly" Section**: Emphasized in the right content stream with an antique gold border (`#c9a24a` / `#f2ca50`), dedicated celestial coordinate badges, and a prominent **"Back to Natally's Room"** navigation action (meeting 44px+ touch requirements).
+- **Design System Fidelity**: Faithfully renders the dark plum-black background (`#120c1c`), warm cream text (`#f1e8d8`), deep purple container cards (`#1a1226`, `#2a1d3d`) framed by subtle borders (`#3a2d50`), with refined Fraunces & Cinzel typography and zero emoji or synthetic gradients.
