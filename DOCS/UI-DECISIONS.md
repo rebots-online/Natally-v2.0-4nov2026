@@ -9,3 +9,4 @@
 - Stitch PDF pages are the LAYOUT reference only: their chart values and lore text were invented by Stitch; the build uses computed chart values and the content generator's text.
 - Stitch atelier header leaks an icon-font name ("person") where the Profile icon belongs; the build uses an inline SVG icon.
 - Android: the landing steers Android visitors to the native Google Play app (quality, voice, and room for on-device local inference later), not the PWA; Windows and Linux get the desktop app (Robin 2026-11-04).
+- Deployment: the old app (natally.robin.mba, natally.surge.sh, v1.x from natally-ai-studio) keeps working in parallel; v2 is deployed alongside on its own address and never replaces the old URLs without Robin's say (Robin 2026-11-04).
