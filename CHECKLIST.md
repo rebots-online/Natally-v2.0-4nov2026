@@ -70,6 +70,6 @@ CodeGraph against ARCHITECTURE. No unit tests.
 ## 🟤 7. Release and verification
 | # | Row | Entity (§) | Status |
 |---|---|---|---|
-| 7.1 | Web live on the new Natally domain (DNS via Namecheap once bought); old v1 URLs untouched | §1, §5.5 | ⬜ |
+| 7.1 | Web deployed to whatever `WEB_DOMAINS` holds in `.env` (nothing waits on a domain purchase; DNS set via Namecheap connector when a domain is named); old v1 URLs untouched | §1, §5.5 | ⬜ |
 | 7.2 | Real-flow pass: sign in → chart → free lesson → Top Up 5/10/25 → Cr shown → reading streams → profile lists every transaction → souvenir → PDF + atelier links in history and email | §7 | ⬜ |
 | 7.3 | Robin's account shows 79 Cr and both US$0.99 transactions | §7 | ⬜ |

@@ -120,10 +120,15 @@ Stitch design theme: surface #161021, primary #ebc165 / #c9a24a, Fraunces, Cinze
 
 `APP_NAME`, `APP_IDENTIFIER`, `WEB_DOMAINS`, `VITE_FIREBASE_*`, `VITE_REVENUECAT_PUBLIC_KEY`,
 `VITE_REVENUECAT_ANDROID_PUBLIC_KEY`, `REVENUECAT_SECRET_API_KEY`, `REVENUECAT_PROJECT_ID`,
-`CREDIT_PACKS_JSON` (5/10/25 → RevenueCat package ids), `SOUVENIR_PRODUCT_ID`,
+`CREDIT_PACKS_JSON` (5/10/25 → RevenueCat package ids, with display prices), `SOUVENIR_PRODUCT_ID`,
+`SOUVENIR_PRICE_USD` (display price; the charged price is the RevenueCat product that id names), `BILLING_PROVIDER`,
 `BILLING_ALLOCATION_BPS=4000`, `ADMIN_REDEMPTION_CODE`, `ADMIN_REDEMPTION_CR=400`,
 `OPENROUTER_ADMIN_KEY`, `OPENROUTER_MODELS`, `SOUVENIR_HOST_*`, `SOUVENIR_SMTP_*`,
 `SURGE_TOKEN` (or the new host's deploy credential).
+
+Every customization is `.env`: app title/name, identifier/namespace, billing provider, domains,
+prices, product ids, hosts. Whoever clones the repo sets their own values; nothing in the code
+or the checklist depends on which values they are.
 
 ## 7. Verification (no unit tests)
 
