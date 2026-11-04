@@ -8,3 +8,4 @@
 - Stitch draws its own mascot and invents chart facts; the build uses the real Natally assets in design/assets/ and only computed chart values.
 - Stitch PDF pages are the LAYOUT reference only: their chart values and lore text were invented by Stitch; the build uses computed chart values and the content generator's text.
 - Stitch atelier header leaks an icon-font name ("person") where the Profile icon belongs; the build uses an inline SVG icon.
+- Android: the landing steers Android visitors to the native Google Play app (quality, voice, and room for on-device local inference later), not the PWA; Windows and Linux get the desktop app (Robin 2026-11-04).
