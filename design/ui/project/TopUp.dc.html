@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Natally — top up</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap">
+<style>body{margin:0}a{color:#f2ca50}a:hover{color:#ffe08a}</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 16px 20px 20px; background: #120c1c; color: #f1e8d8; font-family: 'Nunito Sans', sans-serif; display: flex; flex-direction: column; gap: 14px">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <h1 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 28px">Top Up</h1>
+    <a href="Atelier.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #5a4a72; border-radius: 12px; color: #f1e8d8; text-decoration: none; font-weight: 700">Close</a>
+  </div>
+  <section aria-label="What credits buy" style="padding: 14px; border: 1px solid #2e2340; border-radius: 16px; display: flex; flex-direction: column; gap: 8px">
+    <h2 style="margin: 0; font-size: 18px">What credits do</h2>
+    <ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.6; color: #d8cde6">
+      <li>Natally connects your placements into a personal reading around your question</li>
+      <li>Follow-up questions, horoscope and synastry use the same balance</li>
+      <li>Free lessons about any symbol never use credits</li>
+      <li>Your balance never expires and shows the same on every device</li>
+    </ul>
+  </section>
+  <section aria-label="Choose an amount" style="display: flex; flex-direction: column; gap: 10px">
+    <h2 style="margin: 0; font-size: 18px">Choose an amount</h2>
+    <sc-for list="{{packs}}" as="p" hint-placeholder-count="3">
+      <button type="button" onClick="{{p.pick}}" style="display: flex; justify-content: space-between; align-items: center; min-height: 60px; padding: 0 16px; border: 2px solid {{p.ring}}; border-radius: 14px; background: #1a1226; color: #f1e8d8; font: 700 17px 'Nunito Sans', sans-serif; cursor: pointer"><span>{{p.price}}</span><span style="font-weight: 600; color: #d8cde6">{{p.cr}}</span></button>
+    </sc-for>
+    <p style="margin: 0; font-size: 13px; color: #b6a8c9">Prices before applicable tax. Paid through Google Play on Android, by card on the web.</p>
+  </section>
+  <button type="button" style="margin-top: auto; min-height: 52px; border: 1px solid #c9a24a; border-radius: 14px; background: #2a1d3d; color: #f1e8d8; font: 700 17px 'Nunito Sans', sans-serif; cursor: pointer">Continue to payment · {{selectedPrice}}</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { picked: '10' }; }
+  renderVals() {
+    const all = [{ id: '5', price: 'US$5', cr: '200 Cr' }, { id: '10', price: 'US$10', cr: '400 Cr' }, { id: '25', price: 'US$25', cr: '1,000 Cr' }];
+    const sel = all.find((p) => p.id === this.state.picked);
+    return {
+      packs: all.map((p) => ({ ...p, ring: p.id === this.state.picked ? '#c9a24a' : '#3a2d50', pick: () => this.setState({ picked: p.id }) })),
+      selectedPrice: sel.price
+    };
+  }
+}
+</script>
+</body>
+</html>

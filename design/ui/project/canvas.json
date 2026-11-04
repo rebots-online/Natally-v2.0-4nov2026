@@ -1,0 +1,19 @@
+{"v":3,"createdOnFiles":{"v":1,"at":"2026-11-04T11:20:00Z"},"title":"Natally v2.0 — complete UI (frozen before architecture)","launch":{"view":"canvas"},"pages":[],
+"boards":{
+"Main.dc.html":{"x":0,"y":0,"w":1440,"h":2400,"title":"Landing — sticky hero, chart zooms in its section","expand":"fill","is_interactive":true},
+"SignIn.dc.html":{"x":0,"y":2720,"w":390,"h":844,"title":"1 Sign in + birth details","is_interactive":true},
+"Atelier.dc.html":{"x":470,"y":2720,"w":390,"h":844,"title":"2 App — atelier and reading","is_interactive":true},
+"Profile.dc.html":{"x":940,"y":2720,"w":390,"h":844,"title":"3 Profile — balance, all transactions, sign out","is_interactive":true},
+"TopUp.dc.html":{"x":1410,"y":2720,"w":390,"h":844,"title":"4 Top Up — what you get, then pack","is_interactive":true},
+"Souvenir.dc.html":{"x":1880,"y":2720,"w":390,"h":844,"title":"5 Souvenir — offer and delivery","is_interactive":true},
+"SouvenirAtelier.dc.html":{"x":2350,"y":2720,"w":390,"h":844,"title":"6 Souvenir atelier — frozen export","is_interactive":true},
+"PdfGroupCover.dc.html":{"x":0,"y":3900,"w":816,"h":1056,"title":"PDF — group cover (Houses)","paper":"letter"},
+"PdfElementCover.dc.html":{"x":896,"y":3900,"w":816,"h":1056,"title":"PDF — element cover (7th house, you)","paper":"letter"},
+"PdfDeepDive.dc.html":{"x":1792,"y":3900,"w":816,"h":1056,"title":"PDF — deep dive (7th house lore)","paper":"letter"}
+},
+"order":["Main.dc.html","SignIn.dc.html","Atelier.dc.html","Profile.dc.html","TopUp.dc.html","Souvenir.dc.html","SouvenirAtelier.dc.html","PdfGroupCover.dc.html","PdfElementCover.dc.html","PdfDeepDive.dc.html"],
+"notes":{
+"t1":{"x":0,"y":2480,"text":"App screens (phone)","kind":"title1","maxW":2740},
+"t2":{"x":0,"y":3660,"text":"Souvenir PDF (letter): group cover, then 2 pages per element","kind":"title1","maxW":2608}
+},
+"designSystems":[]}

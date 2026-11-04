@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Natally — landing</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#120c1c}
+a{color:#f2ca50}a:hover{color:#ffe08a}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #120c1c; color: #f1e8d8; font-family: 'Nunito Sans', system-ui, sans-serif">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 32px; border-bottom: 1px solid #2e2340; background: #120c1c">
+    <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #f1e8d8">
+      <img src="/_blob/f481477b2f357372d16e3b3d2e1abd13" alt="" style="width: 44px; height: 44px; border-radius: 50%; border: 2px solid #8a6d2b">
+      <span style="font-family: Fraunces, serif; font-size: 28px">Natally</span>
+    </a>
+    <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 17px">
+      <a href="#your-chart" style="color: #f1e8d8; text-decoration: none">Your chart</a>
+      <a href="#how" style="color: #f1e8d8; text-decoration: none">How she reads</a>
+      <a href="#conversation" style="color: #f1e8d8; text-decoration: none">Conversation</a>
+      <a href="#prices" style="color: #f1e8d8; text-decoration: none">Prices</a>
+      <a href="#education" style="color: #f1e8d8; text-decoration: none">Education</a>
+      <a href="#install" style="color: #f1e8d8; text-decoration: none">Install Natally</a>
+    </nav>
+    <a href="SignIn.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border: 1px solid #5a4a72; border-radius: 12px; color: #f1e8d8; text-decoration: none; font-weight: 700">Sign In</a>
+  </header>
+
+  <div id="top" style="display: flex; flex-wrap: wrap; gap: 32px; max-width: 1440px; margin: 0 auto; padding: 32px">
+    <div style="flex: 1 1 560px; min-width: 0; position: sticky; top: 16px; align-self: flex-start; z-index: 2">
+      <div style="position: relative; border: 1px solid #3a2d50; border-radius: 24px; overflow: hidden; background: #0c0814">
+        <sc-if value="{{showRoom}}" hint-placeholder-val="{{ true }}">
+          <img src="/_blob/4bba548499c09be52cf62f00c80b826f" alt="Natally, a small robot astrologer in a turban, in her candlelit atelier with a crystal ball" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover">
+          <div style="position: absolute; left: 16px; top: 16px; width: 34%; min-width: 150px; border: 2px solid #c9a24a; border-radius: 14px; background: #0a0612; box-shadow: 0 8px 24px rgba(0,0,0,0.5)">
+            <div style="padding: 6px 10px; font-family: Cinzel, serif; font-size: 13px; color: #f2ca50; border-bottom: 1px solid #c9a24a">Move chart</div>
+            <svg viewBox="0 0 200 200" style="display: block; width: 100%; height: auto" aria-hidden="true"><circle cx="100" cy="100" r="88" fill="none" stroke="#c9a24a" stroke-width="2"></circle><circle cx="100" cy="100" r="66" fill="none" stroke="#7d6a9e" stroke-width="1"></circle><circle cx="100" cy="100" r="18" fill="#1f3b6e"></circle><line x1="12" y1="100" x2="188" y2="100" stroke="#c9a24a" stroke-width="1"></line><line x1="100" y1="12" x2="100" y2="188" stroke="#c9a24a" stroke-width="1"></line><line x1="38" y1="38" x2="162" y2="162" stroke="#7d6a9e" stroke-width="0.8"></line><line x1="162" y1="38" x2="38" y2="162" stroke="#7d6a9e" stroke-width="0.8"></line><circle cx="150" cy="70" r="5" fill="#f2ca50"></circle><circle cx="60" cy="140" r="5" fill="#e98ab5"></circle><circle cx="130" cy="150" r="5" fill="#9fd3ff"></circle><circle cx="70" cy="55" r="5" fill="#c8f0d2"></circle></svg>
+          </div>
+        </sc-if>
+        <sc-if value="{{showChart}}" hint-placeholder-val="{{ false }}">
+          <div style="aspect-ratio: 16 / 10; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 50% 50%, #1a1230, #0a0612)">
+            <svg viewBox="0 0 200 200" style="width: 86%; height: auto" role="img" aria-label="Example natal chart wheel, enlarged"><circle cx="100" cy="100" r="92" fill="none" stroke="#c9a24a" stroke-width="2"></circle><circle cx="100" cy="100" r="70" fill="none" stroke="#7d6a9e" stroke-width="1"></circle><circle cx="100" cy="100" r="20" fill="#1f3b6e"></circle><line x1="8" y1="100" x2="192" y2="100" stroke="#c9a24a" stroke-width="1"></line><line x1="100" y1="8" x2="100" y2="192" stroke="#c9a24a" stroke-width="1"></line><line x1="35" y1="35" x2="165" y2="165" stroke="#7d6a9e" stroke-width="0.8"></line><line x1="165" y1="35" x2="35" y2="165" stroke="#7d6a9e" stroke-width="0.8"></line><circle cx="152" cy="68" r="6" fill="#f2ca50"></circle><circle cx="58" cy="142" r="6" fill="#e98ab5"></circle><circle cx="132" cy="152" r="6" fill="#9fd3ff"></circle><circle cx="68" cy="52" r="6" fill="#c8f0d2"></circle><line x1="152" y1="68" x2="58" y2="142" stroke="#e98ab5" stroke-width="1"></line></svg>
+          </div>
+        </sc-if>
+        <div style="position: absolute; right: 16px; top: 16px; padding: 6px 12px; border: 1px solid #5a4a72; border-radius: 10px; background: rgba(18,12,28,0.85); font-size: 14px">Room sounds on</div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 16px">
+        <button type="button" style="min-height: 48px; padding: 0 20px; border: 1px solid #c9a24a; border-radius: 12px; background: #2a1d3d; color: #f1e8d8; font: 700 16px 'Nunito Sans', sans-serif; cursor: pointer">Hear Natally</button>
+        <label style="display: flex; align-items: center; gap: 8px; margin-left: auto; font-size: 15px; color: #c8bcd8">Room
+          <select style="min-height: 44px; padding: 0 12px; border: 1px solid #5a4a72; border-radius: 12px; background: #1c1428; color: #f1e8d8; font: 600 15px 'Nunito Sans', sans-serif"><option>Candlelit atelier</option></select>
+        </label>
+      </div>
+      <p style="margin: 16px 0 8px; font-size: 18px; line-height: 1.55">Come in. You can explore my room, move the little things on my shelves, and see what catches your eye. With your own chart here, choose a planet, sign, house or relationship and I will explain it.</p>
+      <button type="button" style="min-height: 44px; padding: 0 18px; border: 1px solid #5a4a72; border-radius: 12px; background: #1c1428; color: #f1e8d8; font: 700 15px 'Nunito Sans', sans-serif; cursor: pointer">Replay</button>
+    </div>
+
+    <main style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 96px; padding-bottom: 160px">
+      <section id="how" style="display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; font-size: 14px; letter-spacing: 0.18em; color: #b39ddb; font-weight: 700">NATAL ASTROLOGY, READ ALOUD</p>
+        <h1 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 56px; line-height: 1.08">Your birth chart, read aloud by Natally.</h1>
+        <p style="margin: 0; font-size: 19px; line-height: 1.6; color: #d8cde6">She calculates your chart, speaks your reading and lights up each placement on the wheel as she talks about it. Exploring the room and your chart is free. Spoken personal readings use credits.</p>
+      </section>
+      <section id="your-chart" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; border: 1px solid {{chartBorder}}; border-radius: 20px">
+        <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 36px">Your chart, calculated exactly</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #d8cde6">Swiss Ephemeris positions for your birth date, time and place. As this section scrolls into view the chart in the room grows to fill the view, the way it does while she reads; scroll on and it returns to its inset.</p>
+        <button type="button" onClick="{{toggleChart}}" style="align-self: flex-start; min-height: 44px; padding: 0 18px; border: 1px solid #c9a24a; border-radius: 12px; background: #2a1d3d; color: #f1e8d8; font: 700 15px 'Nunito Sans', sans-serif; cursor: pointer">{{chartButton}}</button>
+      </section>
+      <section id="conversation" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 36px">A conversation, not a printout</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #d8cde6">Ask about any planet, sign, house or aspect. Natally explains the symbols for free; a personal reading connects them around the question you bring.</p>
+      </section>
+      <section id="prices" style="display: flex; flex-direction: column; gap: 20px">
+        <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 36px">Prices</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+          <div style="padding: 24px; border: 1px solid #3a2d50; border-radius: 20px; background: #1a1226; display: flex; flex-direction: column; gap: 10px">
+            <h3 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 26px">Credits</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.5; color: #d8cde6">For personal readings and follow-up questions. Shown in Cr.</p>
+            <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8"><li>US$5 → 200 Cr</li><li>US$10 → 400 Cr</li><li>US$25 → 1,000 Cr</li></ul>
+          </div>
+          <div style="padding: 24px; border: 1px solid #c9a24a; border-radius: 20px; background: #1a1226; display: flex; flex-direction: column; gap: 10px">
+            <h3 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 26px">Souvenir reading · US$30</h3>
+            <ul style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.8"><li>Your full reading, built in conversation with Natally</li><li>A keepsake PDF: planets, signs, your 12 closest aspects and all 12 houses, two pages each</li><li>Your own copy of the atelier with the whole conversation</li><li>Both links in your purchase history and by email</li></ul>
+          </div>
+        </div>
+      </section>
+      <section id="education" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 36px">Learn astrology</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #d8cde6">Every placement on the example chart has a short spoken lesson. Free, with no account.</p>
+      </section>
+      <section id="install" style="display: flex; flex-direction: column; gap: 16px">
+        <h2 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 36px">Install Natally</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #d8cde6">On Android from Google Play, on Windows and Linux as an app, or add the web app to your home screen.</p>
+      </section>
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { chart: false }; this.onScroll = this.onScroll.bind(this); }
+  componentDidMount() { window.addEventListener('scroll', this.onScroll, { passive: true }); }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  onScroll() {
+    const el = document.getElementById('your-chart');
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const inView = r.top < window.innerHeight * 0.6 && r.bottom > window.innerHeight * 0.3;
+    if (inView !== this.state.chart) this.setState({ chart: inView });
+  }
+  renderVals() {
+    const chart = this.state.chart;
+    return {
+      showChart: chart, showRoom: !chart,
+      chartBorder: chart ? '#c9a24a' : '#3a2d50',
+      chartButton: chart ? 'Back to the room' : 'Show the chart full size',
+      toggleChart: () => this.setState({ chart: !chart })
+    };
+  }
+}
+</script>
+</body>
+</html>

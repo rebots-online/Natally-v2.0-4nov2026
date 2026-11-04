@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Natally — profile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap">
+<style>body{margin:0}a{color:#f2ca50}a:hover{color:#ffe08a}</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 16px 20px 20px; background: #120c1c; color: #f1e8d8; font-family: 'Nunito Sans', sans-serif; display: flex; flex-direction: column; gap: 14px; overflow-y: auto">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <h1 style="margin: 0; font-family: Fraunces, serif; font-weight: 400; font-size: 28px">Profile</h1>
+    <a href="Atelier.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border: 1px solid #5a4a72; border-radius: 12px; color: #f1e8d8; text-decoration: none; font-weight: 700">Close</a>
+  </div>
+  <section aria-label="Account" style="padding: 14px; border: 1px solid #2e2340; border-radius: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 12px; font-size: 15px">
+    <span style="color: #b6a8c9">Name</span><span>Robin Cheung</span>
+    <span style="color: #b6a8c9">Email</span><span style="overflow-wrap: anywhere">robin.realtor416@gmail.com</span>
+  </section>
+  <section aria-label="Balance" style="padding: 14px; border: 1px solid #2e2340; border-radius: 16px; display: flex; align-items: center; gap: 12px">
+    <div style="display: flex; flex-direction: column"><span style="font-size: 13px; color: #b6a8c9">Balance</span><span style="font-family: Fraunces, serif; font-size: 34px">79 Cr</span></div>
+    <a href="TopUp.dc.html" style="margin-left: auto; display: inline-flex; align-items: center; min-height: 48px; padding: 0 18px; border: 1px solid #c9a24a; border-radius: 12px; background: #2a1d3d; color: #f1e8d8; text-decoration: none; font-weight: 700">Top Up</a>
+  </section>
+  <section aria-label="Purchase history" style="display: flex; flex-direction: column; gap: 8px">
+    <h2 style="margin: 0; font-size: 18px">All transactions</h2>
+    <div style="padding: 12px 14px; border: 1px solid #2e2340; border-radius: 14px; display: flex; flex-direction: column; gap: 4px">
+      <div style="display: flex; justify-content: space-between; font-weight: 700"><span>Souvenir reading</span><span>US$0.99</span></div>
+      <span style="font-size: 14px; color: #b6a8c9">30 October 2026 · paid · +39 Cr</span>
+      <div style="display: flex; gap: 10px; margin-top: 6px">
+        <a href="SouvenirAtelier.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border: 1px solid #5a4a72; border-radius: 10px; color: #f1e8d8; text-decoration: none; font-size: 14px; font-weight: 700">Open your atelier</a>
+        <a href="PdfGroupCover.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border: 1px solid #5a4a72; border-radius: 10px; color: #f1e8d8; text-decoration: none; font-size: 14px; font-weight: 700">Souvenir PDF</a>
+      </div>
+    </div>
+    <div style="padding: 12px 14px; border: 1px solid #2e2340; border-radius: 14px; display: flex; flex-direction: column; gap: 4px">
+      <div style="display: flex; justify-content: space-between; font-weight: 700"><span>Exploration credits</span><span>US$0.99</span></div>
+      <span style="font-size: 14px; color: #b6a8c9">28 October 2026 · paid · +40 Cr</span>
+    </div>
+    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #b6a8c9">Every purchase on your account, read from the store. Receipts load with it when available.</p>
+    <button type="button" style="align-self: flex-start; min-height: 44px; padding: 0 12px; border: 0; background: none; color: #b6a8c9; font: 600 14px 'Nunito Sans', sans-serif; text-decoration: underline; cursor: pointer">Restore purchases</button>
+  </section>
+  <a href="SignIn.dc.html" style="margin-top: auto; display: flex; align-items: center; justify-content: center; min-height: 48px; border: 1px solid #5a4a72; border-radius: 12px; color: #f1e8d8; text-decoration: none; font-weight: 700">Sign out</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
