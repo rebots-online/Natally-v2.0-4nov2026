@@ -1,0 +1,8 @@
+# UI decisions captured during UI design (2026-11-04, Robin via canvas comments)
+
+- No unrequested disclaimers anywhere in product content (Admin-Manual Rule 0c 1h).
+- PDF deep dive: Natally art with an eager Gen Z aside on every deep-dive page; text flows around her.
+- Chart elements in text are chips (subtle rounded border, glyph where one exists), clickable to that element's page; hover/focus shows the customer's own relation to it (web/atelier; PDF keeps links only).
+- Chip links: eventually to the hosted interactive souvenir site (with upsells); split-test against internal PDF links.
+- Natally voice/animation: PDF media does not play in most viewers; each PDF page carries a "Hear Natally" badge linking to that page in the hosted atelier, where she animates and speaks it.
+- Stitch draws its own mascot and invents chart facts; the build uses the real Natally assets in design/assets/ and only computed chart values.
