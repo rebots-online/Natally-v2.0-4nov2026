@@ -1,15 +1,8 @@
-I have designed and delivered the landing page for **Natally** in exact accordance with your visual specifications and verbatim copy requirements:
+I've updated the **Natally · Landing Page** with all requested revisions:
 
-### Visual & Architectural Choices:
-1. **Palette & Atmosphere**: Built around the requested deep plum-black backdrop (`#120c1c`), dual-tone purple container panels (`#1a1226` and `#2a1d3d`), crisp hairline borders (`#3a2d50`), warm cream text (`#f1e8d8`), and antique gold accents (`#c9a24a` / `#f2ca50`). No synthetic gradients or extraneous badges were introduced.
-2. **Typography System**: Headlines set in display serif **Fraunces**, navigational/functional labels formatted in small-caps **Cinzel**, and body copy rendered in clean, legible **Nunito Sans**.
-3. **Sticky Atelier Left Hero**:
-   - Anchored with `position: sticky` on the left column during desktop viewing.
-   - Embeds Natally's candlelit atelier illustration with her turban and glowing crystal ball.
-   - Features the interactive cards and plaques requested: **"Move chart"** inset card in the top-left, **"Room sounds on"** indicator pill in the top-right, and the **"FREE COOKIES · Tap a cookie, take a bite"** plaque at the base of the scene.
-   - Controls beneath include the **"Hear Natally"** primary action, **"Room: Candlelit atelier"** selector dropdown, Natally's verbatim dialogue quotation, and the **"Replay"** button.
-4. **Scrolling Right Column**:
-   - Exact hierarchy with eyebrow `"NATAL ASTROLOGY, READ ALOUD"` and headline `"Your birth chart, read aloud by Natally."`
-   - Detailed informational sections: *"Your chart, calculated exactly"*, *"A conversation, not a printout"*, *"Learn astrology"*, and *"Install Natally"*.
-   - Dedicated **Prices** section containing the two cards: **Credits** (`US$5 = 200 Cr`, `US$10 = 400 Cr`, `US$25 = 1,000 Cr`) and **Souvenir reading US$30** with its complete list of bullet inclusions.
-   - All interactive touch targets are calibrated to 44px+ minimum height.
+1. **Mascot Art & Avatars**: Replaced the previous humanoid automaton everywhere with the cute chibi Natally robot (`A very cute chibi robot character named Natally. Natally has a big round smooth silver-chrome head, large glowing round warm-amber expressive eyes, a tiny friendly smile, soft glowing pink cheek lights, stylish modern sleek headphones over ears, wearing an opulent deep plum velvet turban wrapped on top adorned with an antique gold crescent-and-star brooch and a delicate tiny antenna with a glowing ball at the tip. The cute chibi robot has small cute silver robotic hands holding a softly glowing mystical purple crystal ball with subtle celestial starlight swirling inside. Natally is sitting at a wooden desk in an intimate, cozy candlelit astrological atelier workshop with warm dripping wax candles, antique brass astrolabes, grimoire books, and gothic arched window into the starry midnight sky. Whimsical storybook aesthetic, high detailed rendering, adorable chibi proportions, absolutely NOT a realistic humanoid adult android, strictly a cute chibi robot with round proportions.`), featuring her round silver-chrome head, glowing warm-amber eyes, headphones, plum velvet turban with the gold crescent brooch and antenna ball, and luminous starlit purple crystal ball (both in the main hero visual card and the navigation avatar).
+2. **"Install Natally" Section**:
+   - Updated the descriptive copy verbatim to: *"On Android, get the Natally app from Google Play: it runs smoother, sounds better, and can think on your phone itself. On Windows and Linux, install the desktop app."*
+   - Removed any mention of adding the web app to the home screen.
+   - Added a gold-outlined button labeled **"Get it on Google Play"** alongside the desktop application option.
+3. **Continuity**: Maintained all other sections, pricing tiers, ephemeris specifications, and navigation links.
