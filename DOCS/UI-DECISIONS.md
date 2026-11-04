@@ -6,3 +6,5 @@
 - Chip links: eventually to the hosted interactive souvenir site (with upsells); split-test against internal PDF links.
 - Natally voice/animation: PDF media does not play in most viewers; each PDF page carries a "Hear Natally" badge linking to that page in the hosted atelier, where she animates and speaks it.
 - Stitch draws its own mascot and invents chart facts; the build uses the real Natally assets in design/assets/ and only computed chart values.
+- Stitch PDF pages are the LAYOUT reference only: their chart values and lore text were invented by Stitch; the build uses computed chart values and the content generator's text.
+- Stitch atelier header leaks an icon-font name ("person") where the Profile icon belongs; the build uses an inline SVG icon.
